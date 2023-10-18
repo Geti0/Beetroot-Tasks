@@ -52,3 +52,19 @@ while index1 < len(list_1):
 print("List 1:", list_1)
 print("List 2:", list_2)
 print("Common List without duplicates:", common_list)
+
+
+# Task 3
+
+numbers = list(range(1, 101))
+
+result_list = []
+
+index = 0
+while index < len(numbers):
+    num = numbers[index]
+    if num % 7 == 0 and num % 5 != 0:
+        result_list.append(num)
+    index += 1
+
+print("Integers divisible by 7 but not multiples of 5:", result_list)
